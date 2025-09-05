@@ -1,200 +1,49 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나의 첫 웹페이지</title>
+    <title>간단한 홈페이지</title>
     <style>
-        /* Stylesheet 1: */
         body {
-            font: 100% Lucida Sans, Verdana;
-            margin: 20px;
-            line-height: 26px;
-        }
-
-        .container {
-            min-width: 900px;
-        }
-
-        .wrapper {
-            position: relative;
-            overflow: auto;
-        }
-
-        #top,
-        #sidebar,
-        #bottom,
-        .menuitem {
-            border-radius: 4px;
-            margin: 4px;
-        }
-
-        #top {
-            background-color: #04AA6D;
-            color: #ffffff;
-            padding: 15px;
-        }
-
-        #menubar {
-            width: 200px;
-            float: left;
-        }
-
-        #main {
-            padding: 10px;
-            margin: 0 210px;
-        }
-
-        #sidebar {
-            background-color: #32a4e7;
-            color: #ffffff;
-            padding: 10px;
-            width: 180px;
-            bottom: 0;
-            top: 0;
-            right: 0;
-            position: absolute;
-        }
-
-        #bottom {
-            border: 1px solid #d4d4d4;
-            background-color: #f1f1f1;
+            font-family: Arial, sans-serif;
+            margin: 40px;
             text-align: center;
-            padding: 10px;
-            font-size: 70%;
-            line-height: 14px;
         }
-
-        #top h1,
-        #top p,
-        #menulist {
-            margin: 0;
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
             padding: 0;
         }
-
-        .menuitem {
-            background-color: #f1f1f1;
-            border: 1px solid #d4d4d4;
-            list-style-type: none;
-            padding: 2px;
-            cursor: pointer;
+        li {
+            margin: 10px 0;
         }
-
-        .menuitem:hover {
-            background-color: #ffffff;
-        }
-
-        .menuitem:first-child {
-            background-color: #04AA6D;
-            color: white;
-            font-weight: bold;
-        }
-
-        .menuitem a {
-            text-decoration: none;
-            color: inherit;
-        }
-
         a {
-            color: #000000;
-            text-decoration: underline;
-        }
-
-        a:hover {
             text-decoration: none;
+            color: #007bff;
+            font-size: 1.2rem;
         }
-
-        @media (max-width: 800px) {
-            #sidebar {
-                width: auto;
-                position: relative;
-            }
-
-            #main {
-                margin-right: 0;
-            }
-        }
-
-        @media (max-width: 600px) {
-            #menubar {
-                width: auto;
-                float: none;
-            }
-
-            #main {
-                margin: 0;
-            }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
-
 <body>
-    <div class="container wrapper">
-        <div id="top">
-            <h1>Welcome to LEE's Homepage(22400509)</h1>
-            <p>Use the menu to select different Stylesheets</p>
-        </div>
-        <div class="wrapper">
-            <div id="menubar">
-                <ul id="menulist">
-                    <li class="menuitem"><a
-                            href="https://inspiring-melomakarona-a44791.netlify.app/style1">Stylesheet 1</a></li>
-                    <li class="menuitem"><a
-                            href="https://inspiring-melomakarona-a44791.netlify.app/style2">Stylesheet 2</a></li>
-                    <li class="menuitem"><a href="https://resilient-pegasus-ef90c6.netlify.app/example">Example</a></li>
-                    <li class="menuitem"><a href="https://inspiring-melomakarona-a44791.netlify.app/notstyle">Not Stylesheet</a></li>
-                </ul>
-            </div>
 
-            <div id="main">
-                <h1>Same Page Different Stylesheets</h1>
-                <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can
-                    change
-                    the
-                    layout
-                    of this page by selecting different stylesheets in the menu, or by selecting one of the following
-                    links:<br>
-                    <a href="https://inspiring-melomakarona-a44791.netlify.app/style1">Stylesheet1</a>, <a
-                        href="https://inspiring-melomakarona-a44791.netlify.app/style2">Stylesheet2</a>,
-                        <a href="https://resilient-pegasus-ef90c6.netlify.app/example">Example</a>.
-                </p>
+    <h1>장소연 교수님 환영합니다!</h1>
+    <p>아래 링크들을 클릭해 보세요.</p>
+    
+    <ul>
+        <li><a href="https://inspiring-melomakarona-a44791.netlify.app/style1">style1</a></li>
+        <li><a href="https://inspiring-melomakarona-a44791.netlify.app/style2">style2</a></li>
+        <li><a href="https://inspiring-melomakarona-a44791.netlify.app/notstyle">not_style</a></li>
+        <li><a href="https://resilient-pegasus-ef90c6.netlify.app/example">example</a></li>
+    </ul>
 
-                <h2>No Styles</h2>
-                This page uses DIV elements to group different sections of the HTML page. Click here to see how the page
-                looks
-                like
-                with
-                no stylesheet:<br>
-                <a href="https://inspiring-melomakarona-a44791.netlify.app/notstyle">No Stylesheet</a>.
-            </div>
-
-            <div id="sidebar">
-                <h3>Side-Bar</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                    laoreet
-                    dolore
-                    magna aliquam erat volutpat.</p>
-            </div>
-        </div>
-        <div id="bottom">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-            laoreet
-            dolore
-            magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-            suscipit
-            lobortis
-            nisl
-            ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-            molestie
-            consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim
-            qui
-            blandit
-            praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-        </div>
-
-    </div>
+    <p>교수님을 사랑하는 마음</p>
+    <p>한동인이 가져야할 마음</p>
 
 </body>
-
 </html>
